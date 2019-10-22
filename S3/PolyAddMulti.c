@@ -149,41 +149,31 @@ node* multiply(node *poly,node *poly1,node *poly2){ //multiplying two polynomial
     return poly;
 }
 
-
-
 void main(){
     node *poly1=NULL,*poly2=NULL,*poly=NULL;
     int term1,term2,o=1;
+    printf("\nTerms in 1st polynomial : ");
+    scanf("%d",&term1);
+    poly1=create(poly1,term1);
+    printf("\nTerms in 2nd polynomial : ");
+    scanf("%d",&term2);
+    poly2=create(poly2,term2);
+    printf("\nPolynomial 1 : ");
+    display(poly1);
+    printf("\nPolynomial 2 : ");
+    display(poly2);
 
-    while(o>0 && o<4){
+    while(o>0 && o<3){
         printf("\n\n1.Addition\n2.Multiplication\n3.Exit\nSelect an option : ");
         scanf("%d",&o);
         if(o==1){
-            printf("\nEnter the number of terms in 1st polynomial : ");
-            scanf("%d",&term1);
-            poly1=create(poly1,term1);
-            printf("\nEnter the number of terms in 2nd polynomial : ");
-            scanf("%d",&term1);
-            poly2=create(poly2,term1);
-            printf("\nPolynomial 1 : ");
-            display(poly1);
-            printf("\nPolynomial 2 : ");
-            display(poly2);
+           
             printf("\npoly1 + poly2 = ");
             poly=addition(poly,poly1,poly2);
             display(poly);
         }
         else if (o==2){
-            printf("\nEnter the number of terms in 1st polynomial : ");
-            scanf("%d",&term2);
-            poly1=create(poly1,term2);
-            printf("\nEnter the number of terms in 2nd polynomial : ");
-            scanf("%d",&term2);
-            poly2=create(poly2,term2);
-            printf("\nPolynomial 1 : ");
-            display(poly1);
-            printf("\nPolynomial 2 : ");
-            display(poly2);
+
             printf("\npoly1 * poly2 = ");
             poly=multiply(poly,poly1,poly2);
             display(poly);
@@ -191,6 +181,5 @@ void main(){
         else{
             break;        
         }   
-    }
     printf("\n");
 }
