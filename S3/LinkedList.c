@@ -152,5 +152,4 @@ void main(){
                     break;             
         }
     }
-    printf("\nover");
 }
