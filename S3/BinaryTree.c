@@ -86,7 +86,6 @@ node* delete(node *root, int data){
         }
         else{
             ele=max(root->llink);
-            printf("print %d",ele);
             root->llink=delete(root->llink,ele);
             root->data=ele;
         } 
