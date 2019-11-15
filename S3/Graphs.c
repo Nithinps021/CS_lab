@@ -6,10 +6,13 @@ typedef struct node {
 }node;
 
 void Graph(node *list[],int p1,int p2){
-    node *ptr,*temp;
+    node *ptr,*temp,*ptr1;
     ptr=(node*)malloc(sizeof(node));
     ptr->next=NULL;
     ptr->data=p2;
+    ptr1=(node*)malloc(sizeof(node));
+    ptr1->next=NULL;
+    ptr1->data=p1;
     if(list[p1]==NULL){
         list[p1]=ptr;
         return;
@@ -20,6 +23,17 @@ void Graph(node *list[],int p1,int p2){
             temp=temp->next;
         }
         temp->next=ptr;
+    }
+    if(list[p2]==NULL){
+        list[p2]=ptr1;
+        return;
+    }
+    else{
+        temp=list[p2];
+        while (temp->next) {
+            temp=temp->next;
+        }
+        temp->next=ptr1;
     }
 }
 void DFS(node *list[],int start){
