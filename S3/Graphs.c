@@ -15,7 +15,6 @@ void Graph(node *list[],int p1,int p2){
     ptr1->data=p1;
     if(list[p1]==NULL){
         list[p1]=ptr;
-        return;
     }
     else{
         temp=list[p1];
@@ -26,7 +25,6 @@ void Graph(node *list[],int p1,int p2){
     }
     if(list[p2]==NULL){
         list[p2]=ptr1;
-        return;
     }
     else{
         temp=list[p2];
