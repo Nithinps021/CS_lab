@@ -30,3 +30,12 @@ void main(){
 	}
 	FCFS(arr,n,head);
 }
+
+
+/*
+Enter Head and length of sequence 
+50 8
+Enter the sequence
+176 79 34 60 92 11 41 114
+Number of seek operations : 510 
+*/

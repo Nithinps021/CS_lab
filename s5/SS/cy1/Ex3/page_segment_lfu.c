@@ -71,3 +71,12 @@ void main(){
 	}
 	PagefaultCount(pages,page_size,capacity);
 }
+
+/*
+Enter total capacity and total pages
+3 12
+Enter the pages 
+1 2 3 4 5 2 5 2 5 1 4 3
+Number of page Fault : 9
+
+*/

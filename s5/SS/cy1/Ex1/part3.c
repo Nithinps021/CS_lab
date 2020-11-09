@@ -57,3 +57,19 @@ void main(){
 	printf("Average Turn Around Time : %f\n",avgTT/n);
 	printf("Average Waiting Time : %f\n",avgWT/n);
 }
+/*
+OUTPUT  Round Robin (pre-emptive)
+
+Enter no.of process 
+3
+Enter Burst time
+10 
+5
+8
+P       BT      TT      WT
+1       10      23      13
+2       5       15      10
+3       8       21      13
+Average Turn Around Time : 19.666666
+Average Waiting Time : 12.000000
+*/

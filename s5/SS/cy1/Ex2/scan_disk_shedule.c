@@ -82,3 +82,13 @@ void main(){
 	scanf("%d",&pos);
 	Scan(arr,n,head,pos);
 }
+
+/*
+Enter Head and length of sequence 
+50 8 
+Enter the sequence
+176 79 34 60 92 11 41 114
+direction Right(1) Left(-1): 
+-1
+Sleek count: 226
+*/

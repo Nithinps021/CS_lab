@@ -96,3 +96,33 @@ void main(){
  printf("p%d\n",seq[i]);
  printf("\n");
 }
+
+/*
+Enter total process and resources
+5 3
+
+Enter maximum resources
+        R0              R1              R2
+P0      7               5               3
+P1      3               2               2
+P2      9               0               2
+P3      2               2               2
+P4      4               3               3
+
+Enter allocated resources
+        R0              R1              R2
+P0      0               1               0
+P1      2               0               0
+P2      3               0               2
+P3      2               1               1
+P4      0               0               2
+
+Enter the available resources
+R0       R1      R2      
+3       3       2
+0
+3
+
+P1 -> P3 -> P4 -> P0 -> p2
+
+*/

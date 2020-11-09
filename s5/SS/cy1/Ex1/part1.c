@@ -41,3 +41,20 @@ void main(){
 	printf("Average Turn Around Time : %f\n",avgTT/n);
 	printf("Average Waiting Time : %f\n",avgWT/n);
 }
+
+/*
+OUTPUT FCFS
+
+Enter the number of process needed : 
+3
+Enter arrival time and burst time
+0 5
+3 9
+6 6
+P   TT   WT
+P0   5   0
+P1   11   2
+P2   14   8
+Average Turn Around Time : 10.000000
+Average Waiting Time : 3.333333
+*/
